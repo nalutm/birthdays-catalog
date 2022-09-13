@@ -1,0 +1,225 @@
+.birthdays {
+  margin: 30px auto 0;
+  width: 90%;
+}
+
+.birthdays__title {
+  color: var(--pink);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.birthdays__label {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.form-field {
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 5px;
+  width: 90%
+}
+
+.btn {
+  background: var(--bg-btn);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px var(--shadow);
+  color: var(--background);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5rem;
+  height: 48px;
+  max-width: 400px;
+  transition: all .25s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: var(--bg-btn);
+  color: var(--bg-btn);
+}
+
+.birthdays__table {
+  background-color: var(--table-bg);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.table__head-data {
+  border-bottom: 1px solid var(--pink);
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table__head-data.actions {
+  text-align: center;
+}
+
+.table__data {
+  font-weight: 400;
+  padding: 10px;
+}
+
+.table__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actionBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  transition: all .25s ease-in-out;
+  padding: 5px;
+}
+
+.actionBtn:hover {
+  border-color: var(--bg-btn);
+  border-radius: 5px;
+  color: var(--background);
+}
+
+.actionBtn--edit {
+  color: var(--bg-btn);
+  text-decoration: none;
+}
+
+.actionBtn--delete {
+  color: var(--pink);
+}
+
+.actionBtn--edit:hover {
+  background: var(--bg-btn);
+}
+
+.actionBtn--delete:hover {
+  background: var(--pink);
+}
+
+.error {
+  display: block;
+  color: var(--pink);
+  margin-top: 5px;
+}
+
+.modal-container {
+  align-items: center;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  animation: closeModal .3s forwards;
+}
+
+.modal-container--active {
+  display: flex;
+  animation: openModal .3s forwards;
+}
+
+.modal-container--inactive {
+  display: none;
+}
+
+.modal {
+  background-color: var(--background);
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+@keyframes openModal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, -30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes closeModal {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, -30px);
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .09rem;
+  margin-bottom: 5px;
+}
+
+.modal__text {
+  line-height: 1.2rem;
+}
+
+.modal__actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 18px;
+  min-height: 40px;
+}
+
+.modal__btn--delete {
+  color: var(--pink);
+}
+
+
+@media screen and (min-width: 768px) {
+  .form-field, .modal {
+    width: 50%;
+  }
+
+  .modal {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-field {
+    width: 30%;
+  }
+}

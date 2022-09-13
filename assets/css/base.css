@@ -1,0 +1,14 @@
+@import url(_reset.css);
+@import url(_variables.css);
+@import url(_birthdays.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background) url(../img/ballons.png) top 50vh left -50px / 200px 423px no-repeat;
+  color: var(--shadow);
+  font-family: var(--font);
+  font-weight: 300;
+}

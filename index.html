@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <title>Aniversários</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+  <section class="birthdays">
+    <h1 class="birthdays__title" id="register">Cadastro de pessoas</h1>
+    <form class="form" data-form>
+      <div>
+        <label for="name" class="birthdays__label">
+          Nome:
+          <input class="form-field" data-field="name" id="name" maxlength="120" name="name" type="text" placeholder="Digite o nome. Por exemplo: Nayara Luiza" pattern="[a-zA-Z\s+]{3,120}" required>
+        </label>
+        <span class="error" data-error></span>
+      </div>
+      <div>
+        <label for="birthday" class="birthdays__label">
+          Data de Nascimento:
+          <input class="form-field" data-field="birthday" id="birthday" name="birth-date" type="text" placeholder="Digite a data no formato DD/MM/AAAA" pattern="^([0,1,2,3][0-9])\/([0,1]\d)\/([1,2][9,0]\d\d)$" required>
+        </label>
+        <span class="error" data-error></span>
+      </div>
+      <button class="btn" type="submit">Salvar</button>
+    </form>
+    <table class="birthdays__table" data-table>
+      <tr>
+        <th class="table__head-data">Nome</th>
+        <th class="table__head-data">Data de Aniversário</th>
+        <th class="table__head-data actions">Ações</th>
+        <th class="table__head-data"></th>
+      </tr>
+    </table>
+  </section>
+  <section class="modal-container modal-container--inactive" data-modal="container">
+    <div class="modal" data-modal="modal">
+      <h2 class="modal__title">Excluir este Aniversário?</h2>
+      <p class="modal__text">Se realmente deseja excluir o aniversário clique na opção excluir</p>
+      <div class="modal__actions">
+        <button class="modal__btn modal__btn--delete" data-modal="delete">Excluir</button>
+        <button class="modal__btn" data-modal="cancel">Cancelar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- <a href="https://br.freepik.com/fotos-vetores-gratis/balao-de-festa">Balão de festa vetor criado por brgfx - br.freepik.com</a> -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
