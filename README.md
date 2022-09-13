@@ -21,7 +21,7 @@ CRUD é o acrônimo para Create (criar), Read (ler), Update (atualizar) e Delete
 ### Processo de Desenvolvimento
 A partir desse desafio estou treinando: 
 * CRUD;
-* Utilizar o localStorage para armazenar de dados.
+* Utilizar o localStorage.
 
 ## Screenshot 
 
