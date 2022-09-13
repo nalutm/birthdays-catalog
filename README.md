@@ -42,8 +42,8 @@ Finalizado
 * JS
 
 ## Acesso ao projeto
-Você pode acessar o [código fonte do projeto](https://github.com/nalutm/seven-days-of-code/tree/main/js-dom-crud). 
-Também pode acessar a [página para conferir o resultado final](https://js-dom-crud.vercel.app/).
+Você pode acessar o [código fonte do projeto](https://github.com/nalutm/birthdays-list). 
+Também pode acessar a [página para conferir o resultado final](https://birthdays-list.vercel.app/).
 
 ## Links úteis 
 [CRUD](https://developer.mozilla.org/pt-BR/docs/Glossary/CRUD)
